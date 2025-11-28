@@ -4,6 +4,13 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+
+    let mut bigger = b;
+    if a > b {
+        bigger = a;
+    }
+
+    bigger
 }
 
 fn main() {
